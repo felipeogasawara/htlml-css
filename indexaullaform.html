@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
-<body style="background-color: rgb(0, 0, 0); color: antiquewhite;">
-    <header style="background-color: rgb(52, 105, 11);">
+<body style="background-color: #d4ceaa; color: #8fa691;">
+    <header style="background-color: #2b2823;">
     <hr>
     <hr>
-    <h1>Formulário</h1>
+    <h1 style="display: flex;justify-content: center;font-size: 70px;">Formulário</h1>
     <hr>
     <hr>
     </header>
+    <div style="display: flex;justify-content: center;height: 100vh;position: relative;top: 100px;">
     <form action="#" method="post">
-        <table border="5" style="background-color: aliceblue;color: black;">
+        <table border="5" style="background-color: aliceblue;color: black;height: 300px;width:300px;">
         <td><label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome"></td>
         <tr>
-        <td><input type="email" nome="email" placeholder="email"></td>
+        <td><label for="email">EMAIL:</label>
+            <input type="email" nome="email" placeholder="email"></td>
         </tr>
         <tr>
-        <td><input type="password" nome="password" placeholder="password"></td>
+        <td><label for="senha">PASSWORD:</label>
+            <input type="password" nome="password" placeholder="password"></td>
         </tr>
         <tr>
         <td><label for="País">País:</label>
@@ -34,7 +37,7 @@
         </select></td>
         </tr>
         <tr>
-        <td><label for="Mensagem">Mensagem</label>
+        <td><label for="Mensagem" style="position: relative;">Mensagem</label>
         <textarea name="Mensagem" id="Mensagem"></textarea></td>
         </tr>
         <tr>
@@ -43,6 +46,7 @@
         </tr>
         </table>
     </form>
+    </div>
     
     
 </body>
