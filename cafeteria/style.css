@@ -1,0 +1,101 @@
+.nave{
+    color: white;
+    transition: color 0.2 ;
+}
+.nave:hover{
+    color: rgb(136, 227, 0);
+}
+.bebida{
+    display: flex;justify-content: space-around;flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+.card img{
+    
+    transition: tramsform 0.4s ease;
+}
+.card .texto{
+     position: relative;
+    width: 300px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover .texto {
+  opacity: 1;
+}
+.texto{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+}
+.header {
+  height: 80px;
+  background: linear-gradient(to right, #0a0a0a, #000);
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav a:hover {
+  color: #8cff00;
+}
+
+
+
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #8cff00;
+}
+
+
+.icons {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+}
